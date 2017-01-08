@@ -1,7 +1,9 @@
+<div style="margin: 100px auto auto auto">
 <ol>
   <li ng-repeat="item in narrowCtrl.found">
-     {{ item.name }}
-    <button ng-click="narrowCtrl.onRemove({index: $index});">Remove Item</button>
+     {{ item.name }} , {{ item.short_name }} , {{ item.description }}
+    <button ng-click="narrowCtrl.onRemove( $index);">Remove Item</button>
   </li>
 </ol>
-<div class="error" ng-if="list.cookiesInList()">WARNING! WARNING! COOKIES DETECTED!</div>
+</div>
+<div style="color:#FF0000;font-size:20px" ng-if="narrowCtrl.nothingFoundFlag"><b>Nothing found</div>

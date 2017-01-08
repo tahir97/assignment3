@@ -1,0 +1,7 @@
+<ol>
+  <li ng-repeat="item in narrowCtrl.found">
+     {{ item.name }}
+    <button ng-click="narrowCtrl.onRemove({index: $index});">Remove Item</button>
+  </li>
+</ol>
+<div class="error" ng-if="list.cookiesInList()">WARNING! WARNING! COOKIES DETECTED!</div>

@@ -22,6 +22,16 @@
     <!-- found-items should be implemented as a component -->
     <!-- <found-items found="narrowCtrl.found" on-remove="narrowCtrl.removeItem(index)"></found-items> -->
    <found-items found="narrowCtrl.found" on-remove="narrowCtrl.removeItem(index)"></found-items>
+     
+     <div style="margin: 100px auto auto auto">
+    <ol>
+      <li ng-repeat="item in narrowCtrl.found">
+         {{ item.name }} , {{ item.short_name }} , {{ item.description }}
+        <button ng-click="narrowCtrl.removeItem( $index);">Remove Item</button>
+      </li>
+    </ol>
+  </div>
+    <div style="color:#FF0000;font-size:20px" ng-if="narrowCtrl.nothingFoundFlag"><b>Nothing found</div>
   </div>
 
 </body>

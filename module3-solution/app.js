@@ -67,28 +67,16 @@ function foundItemsDirective() {
       found: '<',
       onRemove: '&'
     }
-    //controller: foundItemsDirectiveController,
-    //controllerAs: 'list',
-    //bindToController: true
+    controller: foundItemsDirectiveController,
+    controllerAs: 'list',
+    bindToController: true
   };
 
   return ddo;
 }
-//
-// function foundItemsDirectiveController() {
-//   var list = this;
-//
-//   // list.cookiesInList = function () {
-//   //   for (var i = 0; i < list.items.length; i++) {
-//   //     var name = list.items[i].name;
-//   //     if (name.toLowerCase().indexOf("cookie") !== -1) {
-//   //       return true;
-//   //     }
-//   //   }
-//   //
-//   //   return false;
-//   // };
-// }
-//
+
+ function foundItemsDirectiveController() {
+ }
+
 
 })();

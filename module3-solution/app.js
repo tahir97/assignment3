@@ -66,7 +66,7 @@ function foundItemsDirective() {
     scope: {
       found: '<',
       onRemove: '&'
-    }
+    },
     controller: foundItemsDirectiveController,
     controllerAs: 'list',
     bindToController: true
